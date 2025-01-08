@@ -15,13 +15,13 @@ const model: Model = {
 };
 
 const App = () => {
-  const handleSave = (updatedModel: Model) => {
+  const getModel = (updatedModel: Model) => {
     console.log("Сохранено:", updatedModel);
   };
 
   return (
     <Box>
-      <ParamEditor params={params} model={model} onSave={handleSave} />
+      <ParamEditor params={params} model={model} onSave={getModel} />
     </Box>
   );
 };
